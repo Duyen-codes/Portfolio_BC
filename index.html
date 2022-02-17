@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+
+    <!-- font awesome icon link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Material icon link  -->
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Duyen Portfolio</title>
+  </head>
+  <body>
+    <!-- Header  -->
+    <header>
+      <div id="logo">
+        <a href="#" class="logo-text">Duyen Nguyen</a>
+      </div>
+
+      <nav class="main_nav">
+        <button class="burger-btn" id="burger-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav__links">
+          <li class="nav__link"><a href="#projects">Projects</a></li>
+          <li class="nav__link"><a href="#aboutme">About me</a></li>
+
+          <li class="nav__link"><a href="#skills">Skills</a></li>
+          <li class="nav__link"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main  -->
+    <main>
+      <section class="welcome-section">
+        <h2 class="section_heading hero_banner--text">
+          Welcome to my portfolio
+        </h2>
+      </section>
+      <!-- Project section -->
+      <section id="projects">
+        <h2 class="section_heading">Projects</h2>
+
+        <div class="projects_container">
+          <div class="project">
+            <img
+              class="project_img"
+              src="https://cdn.pixabay.com/photo/2016/10/16/16/33/dual-screen-1745705__340.png"
+              alt=""
+            />
+            <h3>Lorem, ipsum dolor.</h3>
+            <p class="project_desc">HTML, CSS, JavaScript</p>
+            <a class="more_btn" href="#">See more</a>
+          </div>
+
+          <div class="project">
+            <img
+              class="project_img"
+              src="https://cdn.pixabay.com/photo/2016/10/16/16/33/dual-screen-1745705__340.png"
+              alt=""
+            />
+            <h3>Lorem, ipsum dolor.</h3>
+            <p class="project_desc">HTML, CSS, JavaScript</p>
+            <a class="more_btn" href="#">See more</a>
+          </div>
+
+          <div class="project">
+            <img
+              class="project_img"
+              src="https://cdn.pixabay.com/photo/2016/10/16/16/33/dual-screen-1745705__340.png"
+              alt=""
+            />
+            <h3>Lorem, ipsum dolor.</h3>
+            <p class="project_desc">HTML, CSS, JavaScript</p>
+            <a class="more_btn" href="#">See more</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- About me   -->
+      <section class="about_section" id="aboutme">
+        <h2 class="section_heading">About me</h2>
+        <img
+          src="https://cdn.pixabay.com/photo/2021/07/06/14/38/border-collie-6391794__340.jpg"
+          alt=""
+        />
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur
+          necessitatibus dolor consectetur deleniti rem voluptate mollitia
+          voluptatibus distinctio. Enim tempore totam ratione quis perferendis
+          deserunt consequatur eos nesciunt inventore esse iure, facilis eveniet
+          dolores sint molestias velit culpa aliquam nemo itaque quaerat et.
+          Doloremque perspiciatis dolorem dolore animi ab cumque. Lorem ipsum
+          dolor sit amet consectetur adipisicing elit. Dolorum quidem
+          perspiciatis commodi, tenetur molestias praesentium magni temporibus
+          tempora id. Beatae, minima. Omnis quod, suscipit ut repellat cum
+          voluptatem. Officiis ipsum veritatis quaerat cumque saepe explicabo
+          omnis quae voluptas sint dolor ea distinctio modi voluptatum, illum
+          ullam esse illo maxime quod error molestias, repellendus et. Alias
+          dolore id quo similique. Porro rerum illo asperiores vitae modi
+          cumque. Sunt alias consequatur dolorum nesciunt veniam molestiae
+          facere nostrum quo ullam laborum ratione iure nam nulla officia
+          praesentium tenetur, blanditiis ipsam hic quod? Sapiente mollitia
+          consequuntur ut corporis debitis voluptates inventore a veritatis
+          dignissimos?
+        </p>
+      </section>
+
+      <!-- Skill section  -->
+      <section class="skill_section" id="skills">
+        <h2 class="section_heading">Skills</h2>
+
+        <div class="skills">
+          <div class="skill">
+            <i class="fa-brands fa-html5"></i>
+            <h3>HTML5</h3>
+            <div class="progress-bar">
+              <div data-size="80" class="progress"></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <i class="fa-brands fa-css3-alt"></i>
+            <h3>CSS3</h3>
+            <div class="progress-bar">
+              <div class="progress" data-size="70"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <i class="fa-brands fa-js-square"></i>
+            <h3>JavaScript</h3>
+            <div class="progress-bar">
+              <div class="progress" data-size="60"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+      <h2 class="section_heading">Contact me</h2>
+      <!-- Contact form  -->
+      <form>
+        <div class="form-control name-control">
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" />
+        </div>
+        <div class="form-control email-control">
+          <label for="email">Your email</label>
+          <input type="text" id="email" name="email" />
+        </div>
+        <div class="form-control">
+          <label for="message">Message to me</label>
+          <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </div>
+
+        <input id="send-btn" type="submit" value="SEND MESSAGE" />
+      </form>
+      <p>&copy; 2021 Duyen Nguyen</p>
+      <button id="backToTop">
+        Top <span class="material-icons"> arrow_upward </span>
+      </button>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

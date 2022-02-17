@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.8;
+  scroll-behavior: smooth;
+}
+
+/* Mobile first  */
+
+body {
+  min-width: 375px;
+}
+
+header,
+section,
+footer {
+  padding: 2rem;
+}
+/* HEADER  */
+header {
+  background: url("https://cdn.pixabay.com/photo/2021/11/18/08/04/ladder-6805808_960_720.jpg")
+    no-repeat fixed bottom center/cover;
+  height: 15vh;
+  height: 100px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: black;
+}
+
+a.logo-text {
+  font-size: 2rem;
+}
+
+nav ul {
+  display: none;
+}
+
+nav.responsive ul {
+  background: white;
+  position: absolute;
+  top: 10vh;
+  right: 2rem;
+  width: 50%;
+  display: block;
+}
+
+nav.responsive ul::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: calc(100% - 2rem);
+  border-bottom: 10px solid white;
+  border-right: 10px solid white;
+  border-top: 10px solid transparent;
+  border-left: 10px solid transparent;
+}
+
+nav.responsive ul li {
+  display: block;
+}
+
+nav.responsive a {
+  color: black;
+  display: block;
+  border-bottom: 1px solid #ccc;
+}
+nav a {
+  text-decoration: none;
+  color: white;
+  padding: 2rem;
+}
+
+nav a:hover {
+  background-color: rgb(243, 149, 55);
+}
+
+ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+img {
+  max-width: 100%;
+}
+
+.burger-btn {
+  border: none;
+  color: white;
+  background: transparent;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.bgcolorchange {
+  background: rgb(241, 223, 215);
+}
+
+.bgcolorchange a,
+.bgcolorchange .burger-btn {
+  color: rgb(233, 117, 71);
+}
+/* Main SECTIONS */
+section {
+  padding: 4rem 2rem;
+  overflow: auto;
+  min-height: 50vh;
+  scroll-margin-top: 5rem;
+}
+
+/* Welcome-section  */
+.welcome-section {
+  background: url("https://cdn.pixabay.com/photo/2021/11/18/08/04/ladder-6805808_960_720.jpg")
+    no-repeat fixed bottom center/cover;
+}
+
+.hero_banner--text {
+  margin-top: 10vh;
+  font-size: clamp(3rem, 3vw, 6rem);
+}
+
+h2 + img {
+  margin-bottom: 1rem;
+}
+
+h2.section_heading {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  display: grid;
+  grid-template-columns: minmax(50px, 1fr) auto minmax(50px, 1fr);
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+}
+
+.section_heading::before,
+.section_heading::after {
+  content: "";
+  border-top: 6px double #ff7a18;
+}
+
+/* Project section  */
+.projects_container {
+  text-align: center;
+}
+
+.project {
+  transition: all 0.2s ease;
+  padding: 1rem;
+  margin: 2rem auto;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.project:hover {
+  cursor: pointer;
+  box-shadow: 7px 8px 6px 0px rgba(0, 0, 0, 0.3);
+}
+.project_desc {
+  font-style: italic;
+}
+
+.more_btn {
+  color: #ff7a18;
+  text-decoration: none;
+}
+
+.more_btn:hover {
+  text-decoration: underline;
+}
+
+/* About section  */
+.about_section {
+  background-color: bisque;
+}
+
+.about_section img {
+  float: right;
+  margin-left: 3rem;
+}
+
+/* Skill section  */
+.skill_section img {
+  float: left;
+  margin-right: 3rem;
+}
+
+.progress-bar {
+  background-color: #fefefe;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  height: 30px;
+  width: 500px;
+  max-width: 100%;
+  border-radius: 0.3rem;
+}
+
+.progress {
+  background: linear-gradient(to bottom, #de6262, #ffb88c);
+  height: 30px;
+  border-radius: 0.3rem;
+  width: 0;
+  transition: width 0.5s ease-in;
+}
+
+.skill {
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-brands {
+  font-size: 4rem;
+}
+
+.fa-brands + h3 {
+  font-size: 1.8rem;
+  font-weight: normal;
+}
+/* Footer  */
+/* footer {
+  /* background-color: rgb(8, 9, 29); */
+/* color: white; */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(12, 28, 73);
+  color: white;
+  padding: 2rem;
+  width: 100%;
+}
+
+.form-control {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.form-control label {
+  font-size: clamp(1rem, 2.5vw, 1.6rem);
+}
+
+input,
+textarea {
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+input:focus,
+textarea:focus {
+  border: 1px solid rgb(30, 189, 210);
+}
+
+input[type="submit"] {
+  background-color: chocolate;
+  padding: 8px 15px;
+  color: white;
+  width: 150px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: coral;
+}
+
+/* Back to top button  */
+#backToTop {
+  background-color: rgb(233, 117, 71);
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.3rem;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  font-family: inherit;
+  cursor: pointer;
+  color: white;
+  display: none;
+}
+
+.material-icons {
+  font-size: 1.2rem;
+}
+
+/* Media Queries  */
+/* Ipad air  */
+@media screen and (min-width: 768px) {
+  .burger-btn {
+    display: none;
+  }
+
+  nav ul {
+    display: block;
+  }
+
+  nav a {
+    padding: 20px;
+  }
+
+  /* Project section  */
+  .projects_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .projects_container > * {
+    width: calc(50% - 1.876rem);
+  }
+
+  .form-control label {
+    margin-right: 1rem;
+  }
+
+  /* Skills section  */
+  .skills {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2.5rem;
+  }
+
+  .skill {
+    flex: 1 150px;
+  }
+
+  /* Footer  */
+  form {
+    width: 40vw;
+  }
+}
+
+/* 1200 viewport  */
+@media screen and (min-width: 1024px) {
+  ul li {
+    margin: 0 4rem;
+  }
+
+  .projects_container > * {
+    width: calc(33.3333% - 2.5rem);
+    align-items: stretch;
+  }
+
+  /* Footer  */
+}

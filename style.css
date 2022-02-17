@@ -176,6 +176,7 @@ h2.section_heading {
   cursor: pointer;
   box-shadow: 7px 8px 6px 0px rgba(0, 0, 0, 0.3);
 }
+
 .project_desc {
   font-style: italic;
 }
@@ -329,7 +330,7 @@ input[type="submit"]:hover {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     gap: 2rem;
   }
 
@@ -351,7 +352,7 @@ input[type="submit"]:hover {
     gap: 2.5rem;
   }
 
-  .skill {
+  .skills > * {
     flex: 1 150px;
   }
 
@@ -361,7 +362,7 @@ input[type="submit"]:hover {
   }
 }
 
-/* 1200 viewport  */
+/* 1200px viewport  */
 @media screen and (min-width: 1024px) {
   ul li {
     margin: 0 4rem;
@@ -369,7 +370,6 @@ input[type="submit"]:hover {
 
   .projects_container > * {
     width: calc(33.3333% - 2.5rem);
-    align-items: stretch;
   }
 
   /* Footer  */

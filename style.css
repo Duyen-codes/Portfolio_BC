@@ -236,12 +236,15 @@ h2.section_heading {
 
 .fa-brands {
   font-size: 4rem;
+  color: #de6262;
 }
 
 .fa-brands + h3 {
-  font-size: 1.8rem;
-  font-weight: normal;
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+  /* font-weight: normal; */
 }
+
 /* Footer  */
 /* footer {
   /* background-color: rgb(8, 9, 29); */

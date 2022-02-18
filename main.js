@@ -2,8 +2,10 @@
 const progress_bars = document.querySelectorAll(".progress");
 
 progress_bars.forEach((bar) => {
-  const { size } = bar.dataset;
-  bar.style.width = `${size}%`;
+  console.log(bar.dataset);
+  // const { size } = bar.dataset;
+  // bar.style.width = `${size}%`;
+  bar.style.width = `${bar.dataset.size}%`;
 });
 
 // VARIABLES

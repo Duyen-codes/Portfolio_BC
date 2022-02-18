@@ -19,6 +19,7 @@ html {
 
 body {
   min-width: 375px;
+  font-size: 1.6rem;
 }
 
 header,
@@ -129,7 +130,7 @@ section {
 }
 
 /* Welcome-section  */
-.welcome-section {
+section:first-of-type {
   background: url("https://cdn.pixabay.com/photo/2021/11/18/08/04/ladder-6805808_960_720.jpg")
     no-repeat fixed bottom center/cover;
 }
@@ -161,11 +162,16 @@ h2.section_heading {
 }
 
 /* Project section  */
+section:nth-child(2) {
+  text-align: center;
+}
+
 .projects_container {
   text-align: center;
 }
 
 .project {
+  border-radius: 1rem;
   transition: all 0.2s ease;
   padding: 1rem;
   margin: 2rem auto;

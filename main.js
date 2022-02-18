@@ -18,7 +18,15 @@ const showMobileMenu = () => {
   navLinks.forEach((link) => {
     link.addEventListener("click", showMobileMenu);
   });
-  navMobile.classList.toggle("responsive");
+  if (navMobile.classList.contains("responsive")) {
+    navMobile.classList.remove("responsive");
+    document.body.style.overflow = "";
+  } else {
+    navMobile.classList.add("responsive");
+    document.body.style.overflow = "hidden";
+  }
+
+  // Make body unscrollable when dropdown is open
 };
 
 burgerBtn.addEventListener("click", showMobileMenu);

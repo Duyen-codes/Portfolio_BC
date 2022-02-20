@@ -247,6 +247,7 @@ section:nth-child(2) {
 }
 
 .fa-brands + h3 {
+  /* adjecent sibling selector selects the 2nd element only if it immediately follows the 1st and both are children of same parent element*/
   font-size: 2rem;
   letter-spacing: 0.5px;
   /* font-weight: normal; */

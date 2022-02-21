@@ -27,7 +27,9 @@ section,
 footer {
   padding: 2rem;
 }
+
 /* HEADER  */
+
 header {
   background: url("https://cdn.pixabay.com/photo/2021/11/18/08/04/ladder-6805808_960_720.jpg")
     no-repeat fixed bottom center/cover;
@@ -122,7 +124,9 @@ img {
 .bgcolorchange .burger-btn {
   color: rgb(233, 117, 71);
 }
+
 /* Main SECTIONS */
+
 section {
   padding: 4rem 2rem;
   overflow: auto;
@@ -198,6 +202,7 @@ section:nth-child(2) {
 }
 
 /* About section  */
+
 .about_section {
   background-color: bisque;
 }
@@ -208,6 +213,7 @@ section:nth-child(2) {
 }
 
 /* Skill section  */
+
 .skill_section img {
   float: left;
   margin-right: 3rem;
@@ -254,6 +260,7 @@ section:nth-child(2) {
 }
 
 /* Footer  */
+
 /* footer {
   /* background-color: rgb(8, 9, 29); */
 /* color: white; */
@@ -322,6 +329,7 @@ input[type="submit"]:hover {
 }
 
 /* Media Queries  */
+
 /* Ipad air  */
 @media screen and (min-width: 768px) {
   .burger-btn {
@@ -337,6 +345,7 @@ input[type="submit"]:hover {
   }
 
   /* Project section  */
+
   .projects_container {
     display: flex;
     align-items: center;
@@ -354,6 +363,7 @@ input[type="submit"]:hover {
   }
 
   /* Skills section  */
+
   .skills {
     margin: 0 auto;
     display: flex;
@@ -368,12 +378,14 @@ input[type="submit"]:hover {
   }
 
   /* Footer  */
+
   form {
     width: 40vw;
   }
 }
 
 /* 1200px viewport  */
+
 @media screen and (min-width: 1024px) {
   ul li {
     margin: 0 4rem;

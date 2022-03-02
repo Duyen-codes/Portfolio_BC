@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+
+    <!-- font awesome icon link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Material icon link  -->
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="gallery.css" />
+    <title>Duyen Portfolio</title>
+  </head>
+  <body>
+    <!-- Header  -->
+    <header>
+      <div id="logo">
+        <a href="/index.html" class="logo-text">Duyen Nguyen</a>
+      </div>
+
+      <nav class="main_nav" role="navigation">
+        <button class="burger-btn" id="burger-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav__links">
+          <li class="nav__link">
+            <a href="./index.html#projects">Projects</a>
+          </li>
+          <li class="nav__link"><a href="./index.html#aboutme">About me</a></li>
+          <li class="nav__link">
+            <a href="./gallery.html#gallery">Gallery</a>
+          </li>
+
+          <li class="nav__link"><a href="./index.html#skills">Skills</a></li>
+          <li class="nav__link"><a href="./index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main  -->
+    <main>
+      <div class="grid-section">
+        <h2 class="gallery-heading">Responsive Grid Gallery</h2>
+        <div class="grid-container gallery">
+          <figure class="gallery__item gallery__item--1">
+            <img
+              class="gallery__img"
+              src="https://source.unsplash.com/1600x900/?nature"
+              alt=""
+            />
+            <figcaption>super nice photo</figcaption>
+          </figure>
+
+          <figure class="gallery__item gallery__item--2">
+            <img
+              class="gallery__img"
+              src="https://source.unsplash.com/1600x900/?people"
+              alt=""
+            />
+            <figcaption>super nice photo</figcaption>
+          </figure>
+
+          <figure class="gallery__item gallery__item--3">
+            <img
+              class="gallery__img"
+              src="https://source.unsplash.com/1600x900/?sport"
+              alt=""
+            />
+            <figcaption>super nice photo</figcaption>
+          </figure>
+
+          <figure class="gallery__item gallery__item--4">
+            <img
+              class="gallery__img"
+              src="https://source.unsplash.com/1600x900/?fitness"
+              alt=""
+            />
+            <figcaption>super nice photo</figcaption>
+          </figure>
+
+          <figure class="gallery__item gallery__item--5">
+            <img
+              class="gallery__img"
+              src="https://source.unsplash.com/1600x900/?food"
+              alt=""
+            />
+            <figcaption>super nice photo</figcaption>
+          </figure>
+
+          <figure class="gallery__item gallery__item--6">
+            <img
+              class="gallery__img"
+              src="https://source.unsplash.com/1600x900/?travel"
+              alt=""
+            />
+            <figcaption>super nice photo</figcaption>
+          </figure>
+
+          <figure class="gallery__item gallery__item--7">
+            <img
+              class="gallery__img"
+              src="https://source.unsplash.com/1600x900/?art"
+              alt=""
+            />
+            <figcaption>super nice photo</figcaption>
+          </figure>
+
+          <figure class="gallery__item gallery__item--8">
+            <img
+              class="gallery__img"
+              src="https://source.unsplash.com/1600x900/?cars"
+              alt=""
+            />
+            <figcaption>super nice photo</figcaption>
+          </figure>
+
+          <figure class="gallery__item gallery__item--9">
+            <img
+              class="gallery__img"
+              src="https://source.unsplash.com/1600x900/?candy"
+              alt=""
+            />
+            <figcaption>how about this</figcaption>
+          </figure>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+      <h2 class="section_heading">Contact me</h2>
+      <!-- Contact form  -->
+      <form>
+        <div class="form-control name-control">
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" />
+        </div>
+        <div class="form-control email-control">
+          <label for="email">Your email</label>
+          <input type="text" id="email" name="email" />
+        </div>
+        <div class="form-control">
+          <label for="message">Message to me</label>
+          <textarea name="message" id="message" cols="30" rows="10"> </textarea>
+        </div>
+
+        <input id="send-btn" type="submit" value="SEND MESSAGE" />
+      </form>
+      <p>&copy; 2021 Duyen Nguyen</p>
+      <button id="backToTop">
+        Top <span class="material-icons"> arrow_upward </span>
+      </button>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

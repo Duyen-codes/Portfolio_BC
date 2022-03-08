@@ -40,6 +40,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 9999;
 }
 
 header a {
@@ -61,7 +62,7 @@ nav.responsive ul {
   position: absolute;
   top: 10vh;
   right: 2rem;
-  width: 50%;
+  width: 90%;
   display: block;
 }
 
@@ -86,7 +87,7 @@ nav.responsive a {
   border-bottom: 1px solid #ccc;
 }
 
-nav a {
+header a {
   text-decoration: none;
   color: white;
   padding: 2rem;
@@ -311,7 +312,7 @@ input[type="submit"]:hover {
 
 /* Back to top button  */
 #backToTop {
-  background-color: rgb(233, 117, 71);
+  background-color: rgba(233, 117, 71, 0.6);
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 0.3rem;
@@ -324,6 +325,10 @@ input[type="submit"]:hover {
   display: none;
 }
 
+#backToTop:hover {
+  background-color: rgb(233, 117, 71);
+}
+
 .material-icons {
   font-size: 1.2rem;
 }
@@ -331,7 +336,7 @@ input[type="submit"]:hover {
 /* Media Queries  */
 
 /* Ipad air  */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 800px) {
   .burger-btn {
     display: none;
   }
@@ -387,10 +392,6 @@ input[type="submit"]:hover {
 /* 1200px viewport  */
 
 @media screen and (min-width: 1024px) {
-  ul li {
-    margin: 0 4rem;
-  }
-
   .projects_container > * {
     width: calc(33.3333% - 2.5rem);
   }

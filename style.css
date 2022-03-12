@@ -126,7 +126,7 @@ img {
   color: rgb(233, 117, 71);
 }
 
-/* Main SECTIONS */
+/* MAIN > SECTIONS */
 
 section {
   padding: 4rem 2rem;
@@ -135,7 +135,7 @@ section {
   scroll-margin-top: 5rem;
 }
 
-/* Welcome-section  */
+/* WELCOME SECTION  */
 section:first-of-type {
   background: url("https://cdn.pixabay.com/photo/2021/11/18/08/04/ladder-6805808_960_720.jpg")
     no-repeat fixed bottom center/cover;
@@ -167,7 +167,7 @@ h2.section_heading {
   border-top: 6px double #ff7a18;
 }
 
-/* Project section  */
+/* PROJECT SECTION  */
 section:nth-child(2) {
   text-align: center;
 }
@@ -202,7 +202,7 @@ section:nth-child(2) {
   text-decoration: underline;
 }
 
-/* About section  */
+/* ABOUT SECTION  */
 
 .about_section {
   background-color: bisque;
@@ -213,7 +213,7 @@ section:nth-child(2) {
   margin-left: 3rem;
 }
 
-/* Skill section  */
+/* SKILL SECTION */
 
 .skill_section img {
   float: left;
@@ -260,11 +260,7 @@ section:nth-child(2) {
   /* font-weight: normal; */
 }
 
-/* Footer  */
-
-/* footer {
-  /* background-color: rgb(8, 9, 29); */
-/* color: white; */
+/* FOOTER  */
 
 footer {
   display: flex;
@@ -333,7 +329,7 @@ input[type="submit"]:hover {
   font-size: 1.2rem;
 }
 
-/* Media Queries  */
+/* MEDIA QUERIES  */
 
 /* Ipad air  */
 @media screen and (min-width: 800px) {
@@ -349,7 +345,7 @@ input[type="submit"]:hover {
     padding: 20px;
   }
 
-  /* Project section  */
+  /* PROJECT SECTION  */
 
   .projects_container {
     display: flex;
@@ -367,7 +363,7 @@ input[type="submit"]:hover {
     margin-right: 1rem;
   }
 
-  /* Skills section  */
+  /* SKILL SECTION  */
 
   .skills {
     margin: 0 auto;
@@ -382,7 +378,7 @@ input[type="submit"]:hover {
     flex: 1 150px;
   }
 
-  /* Footer  */
+  /* FOOTER  */
 
   form {
     width: 40vw;
@@ -395,6 +391,4 @@ input[type="submit"]:hover {
   .projects_container > * {
     width: calc(33.3333% - 2.5rem);
   }
-
-  /* Footer  */
 }

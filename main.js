@@ -1,10 +1,7 @@
-// Animate progress bars
+// Animate progress bars in skill sections
 const progress_bars = document.querySelectorAll(".progress");
 
 progress_bars.forEach((bar) => {
-  console.log(bar.dataset);
-  // const { size } = bar.dataset;
-  // bar.style.width = `${size}%`;
   bar.style.width = `${bar.dataset.size}%`;
 });
 
@@ -25,8 +22,6 @@ const showMobileMenu = () => {
     navMobile.classList.add("responsive");
     document.body.style.overflow = "hidden";
   }
-
-  // Make body unscrollable when dropdown is open
 };
 
 burgerBtn.addEventListener("click", showMobileMenu);
@@ -41,13 +36,25 @@ window.onscroll = () => {
     header.classList.remove("bgcolorchange");
     toTopButton.style.display = "none";
   }
+  scrollProgress();
 };
 
 // Back to top function
 const toTopButton = document.querySelector("#backToTop");
-
 const backToTop = () => {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 };
 toTopButton.addEventListener("click", backToTop);
+
+// scroll indicator
+function scrollProgress() {
+  let windowScroll =
+    document.body.scrollTop || document.documentElement.scrollTop;
+  let height =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+  let scrolled = (windowScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+  console.log(document.getElementById("myBar").style.backgroundColor);
+}

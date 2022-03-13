@@ -63,12 +63,11 @@ function scrollProgress() {
 let i = 0;
 function typeWriter() {
   let txt = "Welcome to my portfolio!";
-  let speed = 60;
   if (i < txt.length) {
     document.querySelector(".hero_banner--text").innerHTML += txt.charAt(i);
     i++;
     console.log(txt.charAt(i));
-    setTimeout(typeWriter, speed);
+    setTimeout(typeWriter, 60);
   }
 }
 window.addEventListener("DOMContentLoaded", typeWriter);

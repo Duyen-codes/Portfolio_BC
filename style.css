@@ -20,6 +20,7 @@ html {
 body {
   min-width: 375px;
   font-size: 1.6rem;
+  min-width: 375px;
 }
 
 header,
@@ -149,8 +150,8 @@ img {
   background-color: #04aa6d;
   width: 0%;
 }
-/* MAIN > SECTIONS */
 
+/* MAIN > SECTIONS */
 section {
   padding: 4rem 2rem;
   overflow: auto;
@@ -162,11 +163,15 @@ section {
 section:first-of-type {
   background: url("https://cdn.pixabay.com/photo/2021/11/18/08/04/ladder-6805808_960_720.jpg")
     no-repeat fixed bottom center/cover;
+  text-align: center;
 }
 
 .hero_banner--text {
-  margin-top: 10vh;
+  margin-top: 15vh;
   font-size: clamp(3rem, 3vw, 6rem);
+  color: rgb(233, 117, 71);
+  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
+    0px -5px 35px rgba(255, 255, 255, 0.3);
 }
 
 h2 + img {

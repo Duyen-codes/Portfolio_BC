@@ -58,3 +58,17 @@ function scrollProgress() {
   document.getElementById("myBar").style.width = scrolled + "%";
   console.log(document.getElementById("myBar").style.backgroundColor);
 }
+
+// Typewriter effect
+let i = 0;
+function typeWriter() {
+  let txt = "Welcome to my portfolio!";
+  let speed = 60;
+  if (i < txt.length) {
+    document.querySelector(".hero_banner--text").innerHTML += txt.charAt(i);
+    i++;
+    console.log(txt.charAt(i));
+    setTimeout(typeWriter, speed);
+  }
+}
+window.addEventListener("load", typeWriter);

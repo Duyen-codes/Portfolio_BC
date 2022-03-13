@@ -213,6 +213,9 @@ section:nth-child(2) {
   margin-left: 3rem;
 }
 
+.about_section img:hover {
+  transform: scaleX(-1);
+}
 /* SKILL SECTION */
 
 .skill_section img {

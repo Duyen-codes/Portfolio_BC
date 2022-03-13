@@ -287,11 +287,15 @@ input,
 textarea {
   border-radius: 5px;
   padding: 1rem;
+  outline: none;
+  border: none;
 }
 
 input:focus,
 textarea:focus {
-  border: 1px solid rgb(30, 189, 210);
+  border: 2px solid rgb(30, 189, 210);
+  outline: none;
+  background: #ddd;
 }
 
 input[type="submit"] {

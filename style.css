@@ -59,12 +59,13 @@ nav ul {
 }
 
 nav.responsive ul {
-  background: white;
+  background: lightcyan;
   position: absolute;
   top: 10vh;
   right: 2rem;
   width: 90%;
   display: block;
+  border-radius: 0 0 1rem 1rem;
 }
 
 nav.responsive ul::before {
@@ -72,8 +73,8 @@ nav.responsive ul::before {
   position: absolute;
   top: -20px;
   left: calc(100% - 2rem);
-  border-bottom: 10px solid white;
-  border-right: 10px solid white;
+  border-bottom: 10px solid lightcyan;
+  border-right: 10px solid lightcyan;
   border-top: 10px solid transparent;
   border-left: 10px solid transparent;
 }
